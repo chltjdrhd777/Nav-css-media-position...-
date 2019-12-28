@@ -1,0 +1,65 @@
+*{
+  margin:0px;
+
+  box-sizing: border-box;
+}
+
+nav{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height:8vh;
+  background-color: #5d4054;
+  font-family: 'Ma Shan Zheng', cursive;
+}
+
+.future {
+  color:white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 22px;
+}
+.nav-list{
+  display:flex;
+  justify-content: space-around;
+  width:30%
+}
+.nav-list a{
+  color:white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+.nav-list li{
+  list-style: none;
+}
+
+.heaven{
+  display:none;
+}
+.heaven div{
+  width:25px;
+  height:3px;
+  background-color:white;
+  margin:5px;
+}
+
+@media screen and (max-width:1024px){
+  .nav-list{
+    width:60%;
+  }
+}
+
+@media screen and (max-width:768px){
+  .nav-list{
+    position: absolute;
+    right:0px;
+    height:92vh;
+    top:8vh;
+    background-color: #5d4054;
+    flex-direction:column;
+    align-items:center;
+    width:50%;
+    transform: translateX(100%);
+  }
+}
